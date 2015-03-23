@@ -28,7 +28,7 @@
                 <th style="text-align: right;">Status</th>
             </tr>
             <tr ng-repeat="task in tasks | expired:false">
-                <td>{{task.title}}</td>
+                <td>{{task.name}}</td>
                 <td>{{task.priority}}</td>
                 <td style="text-align: right;">
                     <input type="checkbox" ng-click="completeTask(task)">
